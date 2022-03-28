@@ -63,7 +63,7 @@ with open(name + '_f.fasta','w') as op1:
     with open(name + '_r.fasta','w') as op2:
         while count < r_num:
             reads_s= random.choice(sites)
-            reads = seq[reads_s:(reads_s + read_l)]
+            reads = seq[reads_s:(reads_s + reads_l)]
             flag = random.choice(fr)
             if flag == 2:
                 cnt_r +=1
